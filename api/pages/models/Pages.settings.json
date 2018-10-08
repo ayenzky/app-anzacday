@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "pages",
+  "info": {
+    "name": "pages",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string"
+    },
+    "Content": {
+      "default": "",
+      "type": "text"
+    },
+    "subPages": {
+      "collection": "pages",
+      "via": "parentPage"
+    },
+    "parentPage": {
+      "model": "pages",
+      "via": "subPages"
+    },
+    "slug": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

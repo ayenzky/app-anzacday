@@ -1,0 +1,21 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "ds233581.mlab.com",
+        "srv": false,
+        "port": 33581,
+        "database": "anzac_db_staging",
+        "username": "root",
+        "password": "admin1234!"
+      },
+      "options": {
+        "authenticationDatabase": "",
+        "ssl": false
+      }
+    }
+  }
+}
